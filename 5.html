@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    body{
+        background-image: url(back2.png);
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+    script {
+            color: aliceblue;
+        }
+
+        .ronaldo {
+            margin-top: 5%;
+        }
+
+        .jordan {
+            margin-top: 5%;
+            /* margin-left: 46%; */
+        }
+        .do {
+            display: flex;
+            justify-content: center;
+        }
+        .just{
+            font-family: 'Anton', sans-serif;
+            font-size: 25px;
+            margin-left: 1%;
+            box-sizing: content-box;
+            width:150px;
+            padding-top: 25px;
+            padding-left: 230px;
+            padding-right: 230px;
+            /* text-align: center; */
+            /* font-style: italic; */
+        }
+        p{
+            text-align: center;
+            color: white;
+            margin-top: 12em;
+            font-size: 38px;
+            width:200px
+        }
+        p:hover{
+            border: 0.1px solid rgb(167, 247, 247);
+            box-sizing: content-box;
+            color: rgb(167, 247, 247);
+        }
+        .nik{
+            animation-name: ku;
+            animation-duration: 1s;
+            animation-delay: 0s;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+        }
+        @keyframes ku{
+            from{
+            padding-left: 230px;
+            padding-right: 230px;
+            font-family: 'Anton', sans-serif;
+            font-size: 25px;
+            margin-left: 1%;
+            box-sizing: content-box;
+            width:150px;
+            padding-top: 25px;
+            }
+            to{
+            padding-left: 100px;
+            padding-right: 100px;
+            font-family: 'Anton', sans-serif;
+            font-size: 25px;
+            margin-left: 1%;
+            box-sizing: content-box;
+            width:150px;
+            padding-top: 25px;
+            }
+        }
+</style>
+<body>
+    <div id="back">
+        <div class="do">
+            <!-- <img src="https://www.transparentpng.com/thumb/cristiano-ronaldo/YXSjFV-cristiano-ronaldo-picture.png"target="_blank"class="ronaldo"></img> -->
+            
+            <img src="RONNY.png" alt="" class="ronaldo">
+            <!-- <img src="ronaldo.png"target="_blank"class="ronaldo"></img> -->
+            <div class="just" onclick="xyz()" id="jus"><p>JUST DO IT.</p></div>
+            <img src="1.png" target="_blank"
+                alt="" class="jordan">
+        </div>
+    </div>
+    <script>
+        var el;
+        el = document;
+        function xyz() {
+          document.getElementById('jus').className='nik';
+          setTimeout(abc,1000);
+        }
+        function abc(){
+            window.open(
+            "1.html", "_self");
+        }
+    </script>
+</body>
+</html>
